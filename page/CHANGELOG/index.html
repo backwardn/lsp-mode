@@ -13,7 +13,7 @@
       
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.0">
     
     
       
@@ -52,6 +52,7 @@
   
     <body dir="ltr">
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -1648,11 +1649,19 @@
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="master-branch">Master branch<a class="headerlink" href="#master-branch" title="Permanent link">#</a></h2>
 <ul>
+<li>Add <code>lsp-headerline-breadcrumb-mode</code> which shows a breadcrumb with
+    the document symbols on headerline when enabled.</li>
+<li>Add <code>lsp-modeline-code-actions-mode</code> which shows code actions on
+    modeline when enabled.</li>
 <li>Support for Theia-based semantic highlighting has been removed in
     favor of the semanticTokens protocol specified by LSP 3.16. To
     enable it, set <code>lsp-enable-semantic-highlighting</code> to <code>t</code>.</li>
 <li><code>lsp-metals</code> moved into a separate repo
     <a href="https://github.com/emacs-lsp/lsp-metals">https://github.com/emacs-lsp/lsp-metals</a></li>
+<li>Breaking change: use alist instead of hast-tables for
+    <code>lsp-gopls-env</code> and <code>lsp-yaml-schemas</code>.</li>
+<li>Add <code>lsp-gopls-codelens</code> defcustom to configure codelenses used for
+    golang.</li>
 </ul>
 <h2 id="release-63">Release 6.3<a class="headerlink" href="#release-63" title="Permanent link">#</a></h2>
 <ul>
@@ -1894,7 +1903,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: June 9, 2020
+      Last update: June 15, 2020
     
   </small>
 </div>
@@ -1983,14 +1992,14 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.a45f732b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.a14cc5fd.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.c03f0417.min.js"
+            worker: "../../assets/javascripts/worker/search.7a2ea5ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
